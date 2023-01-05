@@ -1,0 +1,39 @@
+.header,
+.container {
+  -webkit-tranform: flex;
+  -ms-tranform: flex;
+  display: flex;
+}
+
+.container {
+  -webkit-tranform: flex;
+  -ms-tranform: flex;
+  display: flex;
+}
+
+.navbar {
+  -webkit-tranform: flex;
+  -ms-tranform: flex;
+  display: flex;
+}
+
+.navbar__left,
+.navbar__right {
+  -webkit-tranform: flex;
+  -ms-tranform: flex;
+  display: flex;
+}
+
+.navbar__list {
+  -webkit-tranform: flex;
+  -ms-tranform: flex;
+  display: flex;
+}
+
+.navbar__search {
+  -webkit-tranform: flex;
+  -ms-tranform: flex;
+  display: flex;
+}
+
+/*# sourceMappingURL=style.css.map */

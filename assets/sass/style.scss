@@ -1,0 +1,41 @@
+@mixin transform($property) {
+    -webkit-tranform: $property;
+    -ms-tranform: $property;
+    tranform: $property;
+}
+
+@mixin display($property) {
+    -webkit-tranform: $property;
+    -ms-tranform: $property;
+    display: $property;
+}
+
+.header ,
+.container
+{
+    @include display($property: flex);
+   
+    
+}
+
+.container {
+    @include display($property: flex);
+}
+
+.navbar {
+    @include display($property: flex);
+}
+
+.navbar__left,
+.navbar__right {
+    @include display($property: flex);
+}
+
+.navbar__list {
+    @include display($property: flex);
+}
+
+.navbar__search {
+    @include display($property: flex);
+}
+
