@@ -5,8 +5,8 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Document
-        link(rel="stylesheet", href="./assets/css/normalize.css")
-        link(rel="stylesheet", href="./assets/css/style.css")
+        link(rel="stylesheet", href="./assets/normalize.css")
+        link(rel="stylesheet", href="./assets/style.css")
         link(rel="stylesheet", href="./assets/fontawesome-free-6.2.1-web/css/all.min.css")
         
     body 
@@ -22,13 +22,14 @@ html(lang="en")
                     nav.navbar
                         .navbar__left
                             span.navbar__icon 
-                                a(.navbar__icon_link href="")
+                                a(class="navbar__icon_link" href="")
                                     svg.navbar__icon_img(xmlns='http://www.w3.org/2000/svg' data-name='Layer 1' viewbox='0 0 32 32')
                                         circle(cx='16' cy='16' r='16' fill='#f1f5f1')
                                         polygon(points='16.42 8 6.75 12.47 9.16 21.64 11 21.41 10.49 15.65 11.1 15.38 12.13 21.27 15.27 20.89 14.71 14.53 15.3 14.27 16.45 20.75 19.62 20.36 19.01 13.38 19.61 13.12 20.86 20.2 24 19.82 24 9.89 16.42 8' fill='#050505')
                                         polygon(points='16.65 21.9 16.81 22.8 24 24 24 21 16.66 21.9 16.65 21.9' fill='#050505')
                             ul.navbar__list 
-                                li.navbar__item chúng tôi là ai  
+                                li.navbar__item 
+                                    a.navbar__item_link(href="") chúng tôi là ai
                                     i.navbar__item_icon.fa-solid.fa-caret-down
                                 li.navbar__item làm việc cùng chúng tôi
                                     i.navbar__item_icon.fa-solid.fa-caret-down

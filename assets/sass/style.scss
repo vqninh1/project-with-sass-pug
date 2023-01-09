@@ -1,41 +1,48 @@
-@mixin transform($property) {
-    -webkit-tranform: $property;
-    -ms-tranform: $property;
-    tranform: $property;
+@import 'base';
+@import 'variables';
+@import 'mixins';
+ 
+.header {
+    background-color: red;
+    .container {
+        @include display(flex);
+        .header__logo {
+            padding-left: 36px;
+            position: relative;
+            &_link {
+            }
+            &_img {
+                fill: $text-color;
+            }
+            &_icon {
+                color: $grey-color;
+                @include absoluteCenter("top"); 
+            }
+        }
+        .navbar {
+            @include display(flex);
+            &__left {
+                @include display(flex);
+            }
+            &__icon {
+
+            }
+            &__list {
+                @include display(flex);
+            }
+            
+            &__right {
+                @include display(flex);
+            }
+            &__global {
+
+            }
+            &__search {
+                @include display(flex);
+            }
+        }
+    }
 }
 
-@mixin display($property) {
-    -webkit-tranform: $property;
-    -ms-tranform: $property;
-    display: $property;
-}
 
-.header ,
-.container
-{
-    @include display($property: flex);
-   
-    
-}
-
-.container {
-    @include display($property: flex);
-}
-
-.navbar {
-    @include display($property: flex);
-}
-
-.navbar__left,
-.navbar__right {
-    @include display($property: flex);
-}
-
-.navbar__list {
-    @include display($property: flex);
-}
-
-.navbar__search {
-    @include display($property: flex);
-}
 
