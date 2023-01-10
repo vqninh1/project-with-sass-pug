@@ -61,6 +61,7 @@
             @include display(inline-block);
             padding-left: 8px;
             padding-right: 8px;
+            
             &_link {
                 text-decoration: none;
                 display: inline-block;
@@ -70,6 +71,10 @@
                 text-transform: uppercase;
                 color: $grey-dark-color;
                 letter-spacing: 2px;
+                &:hover {
+                    text-decoration: underline;
+                    color: $white-color;
+                }
             }
         }
     }

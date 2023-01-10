@@ -907,6 +907,10 @@ html {
   color: #5e5d5b;
   letter-spacing: 2px;
 }
+.footer__nav_item_link:hover {
+  text-decoration: underline;
+  color: #ebebeb;
+}
 .footer__social {
   padding-top: 0;
   padding-bottom: 0;
